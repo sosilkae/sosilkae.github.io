@@ -1,0 +1,38 @@
+<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 476.914 436.396" style="enable-background:new 0 0 476.914 436.396;" xml:space="preserve">
+	<!-- width="476.914px" height="436.396px" -->
+
+<defs>
+	<style type="text/css">
+
+		.st0 {
+			fill: #363C98;
+			stroke:#FFF;
+			stroke-width:2;
+			stroke-miterlimit:10;
+		}
+
+		.st0 {
+			stroke-dasharray: 1900;
+			stroke-dashoffset: 10;
+			-webkit-animation:dash 1s linear forwards;
+			-o-animation:dash 1s linear forwards;
+			-moz-animation:dash 1s linear forwards;
+			animation:dash 1s linear forwards;
+			animation-timing-function: ease-in-out;
+		}
+
+		@-webkit-keyframes dash{
+			from {
+				stroke-dashoffset: 1500;
+			}
+			to {
+				stroke-dashoffset: 0;
+			}
+		}
+
+	</style>
+</defs>
+
+<polygon class="st0" points="1,404.48 1,1 447.978,1 447.978,16.396 461.914,16.396 461.914,30.396 475.914,30.396 475.914,435.396 
+	35.914,435.396 35.914,421.396 17.914,421.396 17.914,404.48 "/>
+</svg>

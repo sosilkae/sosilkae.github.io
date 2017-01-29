@@ -1,0 +1,364 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			
+		<title>Style Guide</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/grids.css">
+   		<link rel="stylesheet" href="css/fonts.css">
+
+	</head>
+
+	<body id="plain">
+		<div class="style-guide">
+			<h1 class="title1">Portfolio Style Guide</h1>
+			<p>This styleguide is a resource to provide a common language around my portfolio design patterns. It is used to maintain code structure and visual consistency across platforms.</p>
+
+			<div class="grid-row">
+				<nav id="sg-menu">
+					<div class="grid-col-1of4">
+						<a href="#text_styling_elements" class="sg-menu-item">Typography</a>
+					</div>
+					<div class="grid-col-1of4">
+		       			<a href="#interactive_elements" class="sg-menu-item">Buttons and Links</a>
+		       		</div>
+		       		<div class="grid-col-1of4">
+		       			<a href="#colour_palette" class="sg-menu-item">Branding</a>
+		       		</div>
+		       		<div class="grid-col-1of4">
+		       			<a href="#project_elements" class="sg-menu-item">Project Layout</a>
+		       		</div>
+				</nav>
+			</div>
+
+
+<!-- =====  1 Style Guide & Definitions  ====================================== -->
+
+<!-- .....  1.1 General Typography  ........................................... -->
+			<section id="text_styling_elements">
+				<h2 class="title1">Typography</h2>
+				
+				<section>
+					<h3 class="title2">Headers</h3>
+
+					<h4 class="title5">CSS Selector:</h4>
+					<p>h1, h2, h3, h4, h5<p>
+
+					<h4 class="title5">Sample Code:</h4>
+					<code>
+						&lt;h1 class="title1"&gt;Heading One&lt;/h1&gt;
+						<br>&lt;h2 class="title2"&gt;Heading Two&lt;/h2&gt;
+						<br>&lt;h3 class="title3"&gt;Heading Three&lt;/h3&gt;
+						<br>&lt;h4 class="title4"&gt;Heading Four&lt;/h4&gt;
+						<br>&lt;h5 class="title5"&gt;Heading Five&lt;/h5&gt;
+					</code>
+
+					<h4 class="title5">Example:</h4>
+
+					<h1 class="title1">Heading One</h1> <!--Exception to warning as an example for Style Guide-->
+					<h2 class="title2">Heading Two</h2>
+					<h3 class="title3">Heading Three</h3>
+					<h4 class="title4">Heading Four</h4>
+					<h5 class="title5">Heading Five</h5>
+				</section>
+
+				<section>
+					<h3 class="title2">Paragraph</h3>
+
+					<h4 class="title5">CSS Selector:</h4>
+					<p>p</p>
+
+					<h4 class="title5">Sample Code:</h4>
+						<code>
+							&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet sapien elit, non varius ligula sollicitudin non. Donec hendrerit lacus a metus molestie tempor. 0671 Praesent congue lacus ipsum, et vehicula urna pharetra eu. Fusce lobortis erat eget nulla egestas, id tristique quam imperdiet.&lt;/p&gt;
+						</code>
+
+					<h4 class="title5">Example:</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet sapien elit, non varius ligula sollicitudin non. Donec hendrerit lacus a metus molestie tempor. 0671 Praesent congue lacus ipsum, et vehicula urna pharetra eu. Fusce lobortis erat eget nulla egestas, id tristique quam imperdiet.</p>
+				</section>
+
+				<section>
+					<h3 class="title2">Lists</h3>
+
+					<h4 class="title5">CSS Selector:</h4>
+					<p>ul, li</p>
+
+					<h4 class="title5">Sample Code:</h4>
+						<code>
+							&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet sapien elit, non varius ligula sollicitudin non. Donec hendrerit lacus a metus molestie tempor. 0671 Praesent congue lacus ipsum, et vehicula urna pharetra eu. Fusce lobortis erat eget nulla egestas, id tristique quam imperdiet.&lt;/p&gt;
+						</code>
+
+					<h4 class="title5">Example:</h4>
+						<ul>
+							<li>List One</li>
+							<li>List Two</li>
+							<li>List Three</li>
+						</ul>
+				</section>
+
+			</section>
+
+
+
+<!-- .....  1.2 Interactive Elements  ......................................... -->
+			<section id="interactive_elements">
+				<h2 class="title1">Buttons and Links</h2>
+				<section>
+					<h3 class="title2">In-text Link</h3>
+
+					<h4 class="title5">CSS Selector:</h4>
+					<p>.intext-link, invert-intext-link<p>
+
+					<h4 class="title5">Sample Code:</h4>
+					<code>
+						&lt;a href="#" class="intext-link"&gt;intext link&lt;/a&gt;
+						<br>&lt;a href="#" class="invert-intext-link"&gt;invert-intext link&lt;/a&gt;
+					</code>
+
+					<h4 class="title5">Example:</h4>
+					<p class="blue-text">This is an <a href="#" class="intext-link">intext link</a> example</p>
+					<div class="invert-swatch-2"><p class="white-text">This is an <a href="#" class="invert-intext-link">invert-intext link</a> example on coloured background</p></div>
+				</section>
+
+				<section>
+					<h3 class="title2">More Info</h3>
+
+					<h4 class="title5">CSS Selector:</h4>
+					<p>h5, .expand-link<p>
+
+					<h4 class="title5">Sample Code:</h4>
+					<code>
+						&lt;h5&gt;&lt;a href="#" class="expand-link"&gt;Read More&lt;/a&gt;&lt;/h5&gt;
+					</code>
+
+					<h4 class="title5">Example:</h4>
+					<h5><a href="#" class="expand-link">Read More</a></h5>
+				</section>
+
+
+				<section>
+					<h3 class="title2">Regular Navigation Button</h3>
+
+					<h4 class="title5">CSS Selector:</h4>
+					<p>.exp-button<p>
+
+					<h4 class="title5">Sample Code:</h4>
+					<code>
+						&lt;a href="#" class="exp-button"&gt;Profile&lt;/a&gt;
+					</code>
+
+					<h4 class="title5">Example:</h4>
+					<nav>
+				        <a href="#contact-landing" class="menu-item blue-text">Contact</a>
+				        <a href="#work-landing" class="menu-item blue-text">Work</a>
+				        <a href="#profile-landing" class="menu-item blue-text">Profile</a>
+   					</nav>
+
+				</section>
+
+				<section>
+					<h3 class="title2">Button</h3>
+
+					<h4 class="title5">CSS Selector:</h4>
+					<p>.button<p>
+
+					<h4 class="title5">Sample Code:</h4>
+					<code>
+						&lt;a href="#" class="button"&gt;View Project&lt;/a&gt;
+					</code>
+
+					<h4 class="title5">Example:</h4>
+						<a href="#" class="button">View Project</a>
+				</section>
+
+			</section>
+
+
+<!-- .....  1.3 Colour Palette  ............................................... -->
+			<section id="colour_palette">
+				<h2 class="title1">Branding</h2>
+				<section>
+					<h3 class="title2">Colour Palette</h3>
+					<div class="grid-row">
+						<h4 class="title5">Shades</h4>
+						<div class="grid-col-1of4">
+							<div class="colour-black white-text">
+								<h4 class="title5">#2B2A2A</h4>
+							</div>
+						</div>
+
+						<div class="grid-col-1of4">
+							<div class="colour-white">
+								<h4 class="title5">#FDFDFD</h4>
+							</div>
+						</div>
+
+						<div class="grid-col-1of4">
+							<div class="colour-red">
+								<h4 class="title5">#CA5F5D</h4>
+							</div>
+						</div>
+
+						<div class="grid-col-1of4">
+							<div class="colour-blue white-text">
+								<h4 class="title5">#363C98</h4>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+
+
+<!-- .....  1.1 Project Elements  ............................................. -->
+			<section id="project_elements">
+				<h2 class="title1">Project Layout</h2>
+
+		
+				<div id="project-main-container">
+
+					<section id="basic-information">
+						
+						<div class="large-project-container grid-row">
+							<img class="grid-col-1of1" src="images/IWD-2016-Cover.jpg" alt="IWD Program Cover">
+						</div>
+
+						<div class="project-title grid-row">
+							<div class="grid-col-1of1">
+								<h2 class="title1 blue-text">International Women's Day</h2>
+								<h2 class="title3 blue-text">Young Women in Business SFU</h2>
+							</div>
+						</div>
+
+						<div class="brief grid-row">
+							<div class="grid-col-1of2">
+								<h3 class="title3 blue-text">Event and program design for YWiB’s 6th Annual International Women’s Day Conference.</h3>
+
+								<div class="specs">
+									<p>Service: Print, Graphic Design</p>
+									<p>Roles: Art Direction, Ideation, Branding, Visual Design</p>
+									<p>Programs used: Illustrator, Photoshop, InDesign</p>
+								</div>
+							</div>
+
+							<div class="grid-col-1of2">
+								<p class="blue-text">As YWiB’s Media Design Coordinator (2015/2016), my role was to lead, design, and execute the visual brand identity for this milestone event. A multi-page brochure was developed as the event’s program guide for attendees. I also produced a range of digital and print promotional media leading up to the conference including digital ads, posters, and flyers.
+								</p>
+							</div>
+						</div>
+
+						<div class="large-project-container grid-row">
+							<img class="grid-col-1of1" src="images/IWD-2016-Spread1.jpg" alt="IWD Program Spread 1">
+						</div>
+
+						
+						<div class="explanation-portion-1 grid-row">
+							<div class="grid-col-1of2">
+								<h3 class="title5 blue-text">Responsibilities</h3>
+								<p class="blue-text">This role included working closely with the Event Project Manager to ensure the program package included everything as needed. In order to get a better sense of the event, we discussed the tone of the event, and what the differences were from the previous year. Taking this feedback, I created a moodboard to express these intentions into a visual form, and presented it back to the coordinators. In comparison to the program guide I produced in the previous year, I challenged myself to use less white space and create a more vivid voice by contrasting colours within the brand palette.</p>
+							</div>
+
+							<div class="grid-col-1of2">
+								<h3 class="title5 blue-text">Challenges</h3>
+								<p class="blue-text">A challenge I faced was aligning the existing brand colours to the new visual propositions for the event. There was a need for a lighter atmosphere, however YWiB’s brand palettes featured hard and vibrant pinks, purples and white. To solve this, I drafted iterations of colour stories with different levels of pinks and purples to see how I could create the same contrasting effects as single vibrant colours. As a result, I was able to combine pastel pink, dusty pink, and a purple periwinkle together while using the same brand colour tones. 
+								</p>
+							</div>
+						</div>
+
+						
+						<div class="grid-col-1of1">
+							<p class="example-caption blue-text">Examples of Previous Program, 2015</p>
+						</div>
+							<div class="explanation-portion-1 grid-row">
+								<div class="grid-col-1of2">
+									<div class="small-project-container">
+										<img src="images/IWD-2015-Spread3.jpg" alt="IWD 2016 Program Spread 3">
+									</div>
+								</div>
+
+								<div class="grid-col-1of2">
+									<div class="small-project-container">
+										<img src="images/IWD-2015-Spread1.jpg" alt="IWD 2015 Program Cover">
+									</div>
+								</div>
+							</div>
+					
+
+
+						<div class="explanation-portion-2 grid-row">
+							<div class="profile-list grid-col-1of2">
+								<div class="grid-col-1of2">
+									<h4 class="title5 blue-text">Example</h4>
+									<ul class="blue-text">
+										<li>Maecenas et.</li>
+										<li>Risus libero</li>
+										<li>Nam maximus.</li>
+										<li>Vestibulum venenatis</li>
+									</ul>
+								</div>
+							
+								<div class="grid-col-1of2">
+									<h4 class="title5 blue-text">Example</h4>
+									<ul class="blue-text">
+										<li>Maecenas et.</li>
+										<li>Risus libero</li>
+										<li>Nam maximus.</li>
+										<li>Vestibulum venenatis</li>
+									</ul>
+								</div>
+							</div>
+							
+							<div class="grid-col-1of2">
+								<p class="blue-text">Overall, this job required organizational and communication skills to efficiently create the package to completion in a short amount of time. What proved to be an important aspect of this role was my ability to adapt and work flexibly when event content continued to change. Clear communication within the team was crucial to executing this successfully.</p>
+							</div>
+							
+						</div>
+
+						<div class="large-project-container grid-row">
+							<img class="grid-col-1of1" src="images/IWD-2016-Spread2.jpg" alt="IWD Program Spread 2">
+						</div>
+
+						<div class="explanation-portion-1 grid-row">
+							<div class="grid-col-1of1">
+								<h2 class="title2 blue-text">If you’re interested in collaborating, have a new project in mind, or want to chat, <a href="index.html#contact-landing" class="intext-link">get in touch</a> with me! I’d love to hear from you.</h2>
+							</div>
+						</div>
+
+						<div class="pagination">
+							<div class="grid-row">
+								<div class="grid-col-1of2">
+									<div class="previous">
+										<a href="Work2.html" class="button">Previous Work</a>
+									</div>
+								</div>
+
+								<div class="grid-col-1of2">
+									<div class="next">
+										<a href="Work2.html" class="button">Next Work</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<footer>
+				        <a href="index.html" class="footer-item blue-text">Portfolio</a>
+				        <a href="Citations.html" class="footer-item blue-text">Citations</a>
+				    </footer>
+				</div>		
+			</section>
+		</div>
+
+	<a href="#0" class="cd-top">Top</a>
+
+<!--Script-->
+    <script src="js/jquery.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/backtotop.js"></script>
+
+	</body>
+
+</html>
