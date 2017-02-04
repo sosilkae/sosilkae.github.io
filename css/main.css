@@ -302,14 +302,22 @@ ul>li::before {
     overflow:hidden;
     background-color:none;
 }
-.videoWrapper iframe {
+
+.videoWrapper video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    border: 4px solid;
+    border-color: #39bcb0;
 }
 
+
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
 
 img {
     border:none;
