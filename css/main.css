@@ -327,6 +327,7 @@ ul>li::before {
 }
 
 #my_camera{
+    position: inline-block;
     text-align: center;
     padding: 5em;
     margin: 5em;
