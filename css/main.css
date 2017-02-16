@@ -322,10 +322,16 @@ ul>li::before {
 
 .centered{
     text-align: center;
-    padding: 3em;
-    margin: 3em;
+    padding: 5em;
+    margin: 5em;
 }
 
+#my_camera{
+    text-align: center;
+    padding: 5em;
+    margin: 5em;
+
+}
 video {
   width: 100%    !important;
   height: auto   !important;
