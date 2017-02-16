@@ -320,17 +320,12 @@ ul>li::before {
     border-color: #39bcb0;
 }
 
-/*.centered{
-    text-align: center;
-    padding: 5em;
-    margin: 5em;
-}*/
 
 #my_camera{
     position: inline-block;
     text-align: center;
-    padding: 5em;
-    margin: 5em;
+    padding: 2em;
+    margin: 2em;
 
 }
 video {
