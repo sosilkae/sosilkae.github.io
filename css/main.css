@@ -320,6 +320,9 @@ ul>li::before {
     border-color: #39bcb0;
 }
 
+.centered{
+    text-align: center;
+}
 
 video {
   width: 100%    !important;
