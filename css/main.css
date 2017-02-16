@@ -323,9 +323,7 @@ ul>li::before {
 
 #my_camera{
     position: inline-block;
-    text-align: center;
-    padding: 2em;
-    margin: 2em;
+    margin: auto;
 
 }
 video {
