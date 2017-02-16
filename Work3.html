@@ -60,19 +60,21 @@
 					<div class="grid-row">
 						<div class="grid-col-1of1">
 
-							<div class="testCamera"><script src="webcam.js"></script>
-							<div id="my_camera" style="width:320px; height:240px;"></div>
-							<div id="my_result"></div>
+							<div id="my_camera"></div>
+	
+								<!-- First, include the Webcam.js JavaScript Library -->
+								<script type="text/javascript" src="../webcam.min.js"></script>
+								
+								<!-- Configure a few settings and attach camera -->
 								<script language="JavaScript">
-								    Webcam.attach( '#my_camera' );
-								    
-								    function take_snapshot() {
-								        Webcam.snap( function(data_uri) {
-								            document.getElementById('my_result').innerHTML = '<img src="'+data_uri+'"/>';
-								        } );
-								    }
+									Webcam.set({
+										width: 1280,
+										height: 720,
+										image_format: 'jpeg',
+										jpeg_quality: 90
+									});
+									Webcam.attach( '#my_camera' );
 								</script>
-							</div>
 							
 						</div>
 					</div>
