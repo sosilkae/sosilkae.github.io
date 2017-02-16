@@ -320,6 +320,10 @@ ul>li::before {
     border-color: #39bcb0;
 }
 
+.my_camera{
+width: 100%    !important;
+height: auto   !important;
+}
 
 video {
   width: 100%    !important;
