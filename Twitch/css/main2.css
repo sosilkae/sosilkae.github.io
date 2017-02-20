@@ -627,6 +627,7 @@ a.expand-link:hover, a.expand-link:focus {
   height: 100%;
   line-height: 35vh;
   text-align: center;
+  color: green;
 }
 
 /* -----  2.4 Pagination ----------------------------------------------------- */
