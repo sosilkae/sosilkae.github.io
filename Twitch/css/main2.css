@@ -628,6 +628,22 @@ a.expand-link:hover, a.expand-link:focus {
   line-height: 35vh;
   text-align: center;
   color: green;
+  z-index: 9999;
+}
+
+
+.logo img{
+    position: fixed;
+    margin: 0.5em 0 0 0;
+    top: 0;
+    padding: 1em;
+    -webkit-transition: opacity 0.2s ease-out;
+    -moz-transition: opacity 0.2s ease-out;
+    -o-transition: opacity 0.2s ease-out;
+    transition: opacity 0.2s ease-out;
+
+    width: 55px;
+    height: auto;
 }
 
 /* -----  2.4 Pagination ----------------------------------------------------- */
