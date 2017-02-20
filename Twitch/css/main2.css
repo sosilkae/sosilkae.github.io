@@ -628,7 +628,6 @@ a.expand-link:hover, a.expand-link:focus {
   line-height: 35vh;
   text-align: center;
   color: green;
-  z-index: 9999;
 }
 
 
