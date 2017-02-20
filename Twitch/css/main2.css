@@ -620,6 +620,15 @@ a.expand-link:hover, a.expand-link:focus {
     margin-top: 10em;
 }
 
+
+/*stopwatch*/
+.stopwatch {
+  font-size: 1em;
+  height: 100%;
+  line-height: 35vh;
+  text-align: center;
+}
+
 /* -----  2.4 Pagination ----------------------------------------------------- */
 .pagination{
     margin: 3em 0 4em 0;
