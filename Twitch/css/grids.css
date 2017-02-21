@@ -98,6 +98,10 @@ body {
 	    height: 35vw;
 	}
 
+	.xlarge-work-container{
+		height: 50vw;
+	}
+
 	.pagination .grid-col-1of2{
 		width: 50%;
 	}
@@ -120,6 +124,10 @@ body {
 
 	.large-project-container {
 	    height: 50vw;
+	}
+
+	.xlarge-work-container{
+		height: 50vw;
 	}
 
 	#logo img{
@@ -145,7 +153,7 @@ body {
 	}
 
 	.xlarge-work-container{
-		height: 50vw;
+		height: 45vw;
 	}
 
 	.grid-col-1of4 {
