@@ -144,6 +144,10 @@ body {
 	    height: 35vw;
 	}
 
+	.xlarge-work-container{
+		height: 50vw;
+	}
+
 	.grid-col-1of4 {
 		width: 25%;
 	}

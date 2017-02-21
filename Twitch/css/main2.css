@@ -998,12 +998,13 @@ input[type="checkbox"] ~ div {
     height: 80vw;
 }
 
-.large-work-container {
+.large-work-container, .xlarge-work-container {
     height: 80vw;
 }
 
 .small-work-container,
-.large-work-container {
+.large-work-container,
+.xlarge-work-container {
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -1011,7 +1012,8 @@ input[type="checkbox"] ~ div {
 }
 
 .small-work-container img,
-.large-work-container img {
+.large-work-container img,
+.xlarge-work-container img{
     position: absolute;
     width: 100%;
 /*    height: 100%;*/
