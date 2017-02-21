@@ -391,7 +391,9 @@ img {
 }
 
 .small-project-container img,
-.large-project-container img {
+.large-project-container img,
+.xlarge-project-container img
+{
     position: absolute;
     width: 100%;
     height: 100%;
