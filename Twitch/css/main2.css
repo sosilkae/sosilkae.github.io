@@ -1001,7 +1001,7 @@ input[type="checkbox"] ~ div {
 }
 
 .large-work-container, .xlarge-work-container {
-    height: 80vw;
+    height: 50vw;
 }
 
 .small-work-container,
