@@ -10,7 +10,7 @@ Off-black: #2B2A2A
 
   - Background:            #363C98
   - Text:                  #363C98 (Blue)
-		                   #CA5F5D (Red)
+                       #CA5F5D (Red)
                            #F7F7F7 (Grey)
 
   - Hovered Links:         #
@@ -357,7 +357,24 @@ ul>li::before {
 
 
 
-/* -----  1.3 Images & Figures  --------------------------------------------- */
+/* -----  1.3 Images, Videos & Figures  --------------------------------------------- */
+
+.aspect-ratio {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+}
+
+.aspect-ratio iframe{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top:0;
+}
+
 
 img {
     border:none;
