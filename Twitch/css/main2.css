@@ -361,10 +361,10 @@ ul>li::before {
 
 .aspect-ratio {
   position: relative;
-  overflow:hidden;
-  height: auto;
-  max-width:100%;
+  overflow: hidden;
+  height: 0;
   padding-bottom: 56.25%;
+  padding-top: 30px;
 }
 
 .aspect-ratio iframe{
