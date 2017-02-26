@@ -365,9 +365,9 @@ iframe{
 
 .aspect-ratio {
   position: relative;
-/*  width: 100%;*/
-overflow:hidden;
-  height: 0;
+  overflow:hidden;
+  height: auto;
+  max-width:100%;
   padding-bottom: 56.25%;
 }
 
