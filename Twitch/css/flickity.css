@@ -138,6 +138,10 @@ http://flickity.metafizzy.co
   background: #FFF;
 }
 
+.gallery img{
+  width: auto;
+  height: 100%;
+}
 /*.gallery-cell {
   width: 66%;
   height: 200px;
@@ -177,6 +181,12 @@ http://flickity.metafizzy.co
 
 @media screen and ( min-width: 768px ) {
   .carousel img {
-    height: 450px;
+/*    height: 450px;*/
+height: 500px;
+  }
+
+  @media screen and ( min-width: 960px ) {
+  .carousel-cell {
+    width: 100%;
   }
 }
