@@ -459,6 +459,39 @@ img {
     margin: 0;
     padding: 0;
 }
+
+/* gif overlays */
+
+.tooltip {
+      border-bottom: 2px solid #394FFF; color: #000; outline: none;
+      cursor: help; text-decoration: none;
+      position: relative;
+    }
+    .tooltip span {
+      margin-left: -999em;
+      position: absolute;
+    }
+    .tooltip:hover span {
+      font-family: Calibri, Tahoma, Geneva, sans-serif;
+      position: absolute; left: 1.25em; top: -2em; z-index: 99;
+      margin-left: 0; width: 250px;
+    }
+    .tooltip:hover img {
+      /*border: 0; margin: -10px 0 0 -55px;*/
+      float: left;
+      position: absolute;
+    }
+    .tooltip:hover em {
+      font-family: Helvetica, sans-serif; font-size: 1.2em;
+      font-weight: bold;
+      display: block; padding: 0.2em 0 0.6em 0;
+    }
+    .custom { padding: 0 4em; }
+    /** html a:hover { background: transparent; }*/
+    /*.info { background: #FFF; border: 1px solid #2BB0D7;  }*/
+    /*.warning { background: #FFFFAA; border: 1px solid #FFAD33; }*/
+
+
 /* =====  2 Layout Helpers & Reusable Components   ========================== */
 
 
