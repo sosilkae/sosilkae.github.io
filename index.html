@@ -1,343 +1,226 @@
-<!doctype html>
-<html lang=en>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
 
-<head>
-    <title>Kae Linh Ngo</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/grids.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-</head>
+    <head>
+        <title>About</title>
+        <meta name="description" content="About Kae Linh" />
+        <meta name="keywords" content="page loading, effect, initial, logo, sliding, web design, css animation, transform" />
+        <meta name="author" content="Codrops" />
 
-<body class="bg-grid">
-   
-    <div class="logo">
-        <a href="index.html">
-            <img src="images/logo-kae2.png" alt="Portfolio Logo">
-        </a>
-    </div>
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        
 
-    <nav id="menu">
-        <a href="#contact-landing" class="menu-item white-text">Contact</a>
-        <a href="#work-landing" class="menu-item white-text">Work</a>
-        <a href="#profile-landing" class="menu-item white-text">Profile</a>
-    </nav>
-
-    <div class="exp-container">
-        <div class="grid-row">
-            <div class="exp-menu">
-                <a href="#profile-landing" id="profile-btn" class="exp-button-grid exp-position-1">Profile</a>
-                <a href="#work-landing" id="works-btn" class="exp-button-dot exp-position-2">Work</a>
-                <a href="#contact-landing" id="contact-btn" class="exp-button-grid exp-position-3">Contact</a>
-            </div>
-        </div>
-    </div>
+        <link rel="stylesheet" href="css/mainnew.css">
+        <link rel="stylesheet" href="css/grids.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/hover-lib.css">
+        <script type="text/javascript" src="js/jquery.js"></script>
 
 
-    <div id="main-container">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/normalize2.css" />
+        <link rel="stylesheet" type="text/css" href="css/effect1.css" />
+        <script src="js/modernizr.custom.js"></script>
+    </head>
 
-       <section id="profile-landing">
-            <div class="profile-container">
-                <div class="grid-row">
-                    
-                    <div class="first-intro">
-                        <h1 class="title1 white-text">My name is Kae and I’m an experience and visual designer from Vancouver, Canada. I study at the School of Interactive Arts and Technology at Simon Fraser University with a concentration in Design and minor in Print and Digital Publishing.</h1>
-                    </div>
-
-                    <div class="container">
-                        <input type="checkbox" id="check_id">
-                        <label for="check_id"></label>
-                        
-                        <div class="grid-row">
-                           <!--  <div class="grid-col-1of2">
-                                <p class="white-text">I’ve always been the type to observe situations and question dialogues before fully dedicating myself to them. Some may say that’s too wary, but I believe there is a certain meditation and prowess in the approach. Looking at design
-                                    in this way helps me think through those problems, and challenges me to consider how things might work together in unexpected ways. I don’t consider myself an expert (yet), which is why I like to listen </p>
-                            </div>
-
-                            <div class="grid-col-1of2">
-                                <p class="white-text">to others first to seek out what really matters and use my understanding and creativity to build those into comprehensive, visual narratives and experiences. If there’s one thing in my learning that has held true to me in my everyday,
-                                    it’s that I believe finding the slightest insight of importance in what you do is crucial to your work, life, and yourself.
-                                </p>
-                            </div> -->
-                             
+    <body class="">
+        <nav class="navbar">
+                <div class="grid grid-pad">
+                    <div class="col-1-1">
+                        <a href="index.html" class="menu-item-left black">Kae Linh</a>
+                        <div class="topnav" id="myTopnav">
+                            <a href="about.html" class="menu-item black">About</a>
+                            <a href="experiments.html" class="menu-item black ">Experiments</a>
+                            <a href="javascript:void(0);" class="icon" onclick="openNav()">More</a>
                         </div>
 
-
-                        <div class="grid-row">
-                            <!-- <div class="profile-list grid-col-1of2">
-                                <div class="grid-col-1of2">
-                                    <h3 class="title5 blue-text">Strengths</h3>
-                                    <ul class="white-text">
-                                        <li>Interaction Design</li>
-                                        <li>User Interface</li>
-                                        <li>UX Design</li>
-                                        <li>Visual Identity</li>
-                                        <li>Bookbinding</li>
-                                        <li>Photography</li>
-                                        <li>Content Strategy</li>
-                                    </ul>
-                                </div>
-
-                                <div class="grid-col-1of2">
-                                    <h3 class="title5 blue-text">Skills</h3>
-                                    <ul class="white-text">
-                                        <li>Sketch 3</li>
-                                        <li>Adobe Creative Suite</li>
-                                        <li>Prototyping</li>
-                                        <li>User Research</li>
-                                        <li>Personas + User Flows</li>
-                                        <li>Info Architecture</li>
-                                    </ul>
-                                </div>
-                            </div> -->
-
-                            <div class="grid-col-1of2">
-                                <h3 class="title3 white-text">Oh, and--</h3>
-                                <p class="white-text">I like tonkatsu curry, nujabes, and anime gifs.
-                                </p>
-                                <p class="white-text">I kindof sortof really enjoy recycling.</p>
-                                <p class="white-text">I want to learn more about sustainability.</p>
-                            </div>
-
-
-                            <div class="grid-col-1of2 reach-out">
-                                <h3 class="title3 white-text">I'm currently looking for a Summer 2017 Internship! If you’re interested in collaborating, have a new project in mind, or want to chat, <a href="#contact-landing" class="invert-intext-link">get in touch</a> with me! I’d love to hear from you.</h3>   
-                            </div>
+                        <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close</a>
+                            <a href="about.html" class="">About</a>
+                            <a href="experiments.html" class="">Experiments</a>
                         </div>
                     </div>
-
                 </div>
-            </div>
-        </section>
+            </nav>
+            
+        <div id="ip-container" class="ip-container">
+            <!-- initial header -->
+            <header class="ip-header">
+                <h1 class="ip-logo">
+                    <svg class="ip-inner" width="100%" height="100%" viewBox="0 0 180 45" preserveAspectRatio="xMidYMin meet" aria-labelledby="logo_title">
+                        <title id="logo_title"></title>
+                        <path d="M158.1255,24.8334 L161.5805,24.0774 C162.2645,27.1374 164.5675,28.7214 168.4195,28.7214 C171.8035,28.7214 173.8185,27.7494 173.8185,26.1294 C173.8185,24.5104 172.3075,23.7174 168.0605,23.1054 C161.2565,22.1694 158.8815,20.5504 158.8815,17.3464 C158.8815,13.9274 162.1925,11.6594 167.1955,11.6594 C171.8755,11.6594 175.9065,14.2144 176.6625,17.7424 L173.2435,18.5704 C172.5225,16.2304 170.2195,14.7544 167.1955,14.7544 C164.3525,14.7544 162.4445,15.7624 162.4445,17.2744 C162.4445,18.6784 163.7405,19.3624 168.3485,20.0464 C174.9355,21.0544 177.4185,22.7094 177.4185,26.1294 C177.4185,29.5494 173.8545,31.8164 168.4195,31.8164 C162.8405,31.8164 158.8095,29.0814 158.1255,24.8334 Z M150.205,8.8877 L150.205,4.9997 L154.272,4.9997 L154.272,8.8877 L150.205,8.8877 Z M150.42,31.2767 L150.42,12.1987 L154.128,12.1987 L154.128,31.2767 L150.42,31.2767 Z M126.0845,5 L129.7925,5 L129.7925,14.323 L129.8645,14.323 C131.3765,12.595 133.7515,11.659 136.4155,11.659 C141.8515,11.659 145.5215,15.007 145.5215,19.974 L145.5215,31.277 L141.8145,31.277 L141.8145,20.586 C141.8145,17.095 139.5835,14.935 135.9475,14.935 C132.3125,14.935 129.7925,17.311 129.7925,20.658 L129.7925,31.277 L126.0845,31.277 L126.0845,5 Z M116.0767,15.3667 L116.0767,26.2377 C116.0767,27.4977 116.5447,27.9297 118.1287,27.9297 L121.2957,27.9297 L121.2957,31.2767 L117.9477,31.2767 C113.9527,31.2767 112.3687,29.8017 112.3687,26.3097 L112.3687,15.3667 L108.1217,15.3667 L108.1217,12.1997 L112.3687,12.1997 L112.3687,7.7357 L116.0767,7.7357 L116.0767,12.1997 L122.1957,12.1997 L122.1957,15.3667 L116.0767,15.3667 Z M85.91,11.6577 C91.52,11.6577 95.77,15.9477 95.77,21.7377 C95.77,27.5377 91.52,31.8177 85.8,31.8177 C82.99,31.8177 80.51,30.6977 79.21,29.2277 L79.14,29.2277 L79.14,39.3777 L75.43,39.3777 L75.43,12.1977 L79.07,12.1977 L79.07,14.3577 L79.14,14.3577 C80.58,12.7377 82.96,11.6577 85.91,11.6577 Z M85.44,28.5377 C89.33,28.5377 92.06,25.8377 92.06,21.7377 C92.06,17.5977 89.44,14.9377 85.55,14.9377 C81.88,14.9377 79.14,17.4177 79.14,20.4377 L79.14,23.0377 C79.14,26.0977 81.88,28.5377 85.44,28.5377 Z M47.17,21.7377 L47.17,22.9977 L30.61,22.9977 C30.72,26.3777 33.49,28.6877 37.24,28.6877 C39.97,28.6877 42.13,27.4977 43.82,25.0477 L46.49,27.1377 C44.4,30.1977 41.3,31.8177 37.24,31.8177 C30.94,31.8177 26.91,27.8577 26.91,21.8077 C26.91,15.7577 31.12,11.6577 37.09,11.6577 C43,11.6577 47.17,15.9477 47.17,21.7377 Z M30.69,20.1577 L43.46,20.1577 C43.21,17.0977 40.51,14.7877 37.13,14.7877 C33.53,14.7877 30.9,17.0977 30.69,20.1577 Z M71.08,21.7377 L71.08,22.9977 L54.52,22.9977 C54.63,26.3777 57.4,28.6877 61.14,28.6877 C63.88,28.6877 66.04,27.4977 67.73,25.0477 L70.39,27.1377 C68.3,30.1977 65.21,31.8177 61.14,31.8177 C54.84,31.8177 50.81,27.8577 50.81,21.8077 C50.81,15.7577 55.02,11.6577 61,11.6577 C66.9,11.6577 71.08,15.9477 71.08,21.7377 Z M54.59,20.1577 L67.37,20.1577 C67.12,17.0977 64.42,14.7877 61.03,14.7877 C57.43,14.7877 54.81,17.0977 54.59,20.1577 Z M16,6.0777 C21.36,6.0777 24.89,9.1077 24.89,13.9977 C24.89,18.8977 21.4,21.8477 16,21.8477 L6.89,21.8477 L6.89,31.2777 L3,31.2777 L3,6.0777 L16,6.0777 Z M15.82,18.3577 C19.24,18.3577 21,16.9177 21,13.9677 C21,10.9777 19.31,9.5677 15.82,9.5677 L6.89,9.5677 L6.89,18.3577 L15.82,18.3577 Z"/>
+                    </svg>
+                </h1>
+                <div class="ip-loader">
+                    <svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
+                        <path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+                        <path id="ip-loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+                    </svg>
+                </div>
+            </header>
 
-
-        <section id="work-landing">
-
-            <div class="work-section">
-
-                <div class="grid-row">
-
-                    <div class="grid-col-1of2">
-                        <div class="grid-row">
-
-                            <div class="grid-col-1of1">
-                                <div class="modular-work-1">
-                                    <a href="Work2.html">
-                                        <div class="large-work-container">
-                                            <img src="images/KARA-illustration1-2.jpg" alt="girl on a ring">
-                                            <div class="work-info-1">
-                                                <div class="work-text-box">
-                                                    <h2 class="title2 white-text">Kara Yoo Jewelry</h2>
-                                                    <div class="feature-text"><h3 class="title3 white-text">Creative Content Producer</h3>
-                                                    <h4 class="title4 white-text">Art Direction and Creative Media Collateral</h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <div class="button-location">
-                                        <a href="Work2.html" class="button">View Project</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        
-                            <div class="grid-col-1of1">
-                                <div class="modular-work-2">
-                                     <div class="rect">
-                                        <embed src="svg/work-rect.svg">
-                                    </div>
-
-                                    <div class="small-work-container"><img src="images/wu-example-img.png" alt="Logo of WU">
-                                         <a href="Work4.html">
-                                            <div class="work-info-2">
-                                                <div class="work-text-box">
-                                                    <h2 class="title2 white-text">Western Union Messenger</h2>
-                                                    <div class="feature-text"><h3 class="title3 white-text">Coming Soon</h3>
-                                                    <h4 class="title4 white-text">UX and UI</h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
+            <!-- main content -->
+            <div class="ip-main">
                 
-                                    <div class="button-location">
-                                        <a href="Work4.html" class="button">View Project</a>
-                                    </div>
 
-                                </div>
-                            </div>
+                <section id="projectlist">
 
-                            <!--test-->
-                            <div class="grid-col-1of1">
-                                <div class="modular-work-3">
-                                    
-                                    <div class="rect2">
-                                      
-                                            <embed src="svg/work-rect.svg">
+                        <div class="grid grid-pad">
+                            <div class="col-1-1">
+                                    <div class="project-holder">
+                                
+                                        <div class="project-name ex1 on-hover">
+                                            <span class="pre-super display-on-resize">1</span>
+                                            <a href="twitch-always-on-player.html" class="hover-lib p-landing-link-black" id="images/Twitch/webImage-01.png">Twitch: Always On Player</a>
+                                            <span class="super hide-on-resize">1</span>
+                                            <div class="type">
+                                                <p class="example">UX/UI</p>
+                                            </div>
+                                        </div>
+
                                         
-                                    </div>
-
-                                    <div class="small-work-container"><img src="images/pin-header2.jpg" alt="IWD Program Cover">
-                                        <a href="Work5.html">
-                                            <div class="work-info-3">
-                                                <div class="work-text-box">
-                                                    <h2 class="title2 white-text">Melancholy Pin</h2>
-                                                    <div class="feature-text"><h3 class="title3 white-text">Design and Production</h3>
-                                                    <h4 class="title4 white-text">Personal Project</h4>
-                                                    </div>
-                                                </div>                                           
+                                        <div class="project-name ex2 on-hover">
+                                            <span class="pre-super display-on-resize">2</span>
+                                            <a href="dutchDesign2017.html" class="hover-lib p-landing-link-stroke" id="images/dd2017/ddwebsite.png">dutchDesign17</a>
+                                            <span class="super hide-on-resize">2</span>
+                                            <div class="type">
+                                                <p class="example">Visual Design/UX</p>
                                             </div>
-                                        </a>
-                                    </div>
-                                   
-                                    <div class="button-location-right">
-                                        <a href="Work5.html" class="button">View Project</a>
-                                    </div>
+                                        </div>
+                                            
+                                       
 
-                                </div>
-                            </div>
-                            <!--test-->
+                                        <div class="project-name ex3 on-hover">
+                                            <span class="pre-super display-on-resize">3</span>
+                                            <a href="thestore-sleepover.html" class="p-landing-link-black hover-lib" id="images/sleepover/poster1-4.png">The Store: Sleepover</a>
+                                            <span class="super hide-on-resize">3</span>
+                                            <div class="type">
+                                                <p class="example">Branding/Visual Design</p>
+                                            </div>
+                                        </div>
 
-                           
+                                        <div class="project-name ex4 on-hover">
+                                            <span class="pre-super display-on-resize">4</span>
+                                            <a href="nba-in-vr.html" class="hover-lib p-landing-link-black" id="images/nba/nba-logo.png">NBA in VR</a>
+                                            <span class="super hide-on-resize">4</span>
+                                            <div class="type">
+                                                <p class="example">UX/UI</p>
+                                            </div>
+                                        </div>
 
-                        </div>
-                    </div>
+                                        <div class="project-name ex5 on-hover">
+                                            <span class="pre-super display-on-resize">5</span>
+                                            <a href="experience-hue.html" class="hover-lib p-landing-link-stroke" id="images/philips/hue1.png">Experience Hue</a>
+                                            <span class="super hide-on-resize">5</span>
+                                            <div class="type">
+                                                <p class="example">Coming Soon: UX/UI</p>
+                                            </div>
+                                        </div>
 
-                    <div class="grid-col-1of2">
-                        <div class="grid-row">
-                            <div class="grid-col-1of1">
-                                <div class="modular-work-3">
-                                    
-                                    <div class="rect2">
-                                      
-                                            <embed src="svg/work-rect.svg">
+                                        <div class="project-name ex6 on-hover">
+                                            <span class="pre-super display-on-resize">6</span>
+                                            <a href="melancholy-pin.html" class="p-landing-link-stroke hover-lib half" id="images/melancholy/pin-header.jpg">Melancholy Pin</a>
+                                            <span class="super hide-on-resize">6</span>
+                                            <div class="type">
+                                                <p class="example">Design</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="project-name ex7 on-hover">
+                                            <span class="pre-super display-on-resize">7</span>
+                                            <a href="tos-saved-messages.html" class="hover-lib p-landing-link-black" id="images/Twitch/webImage-01.png">TOS: Saved Messages</a>
+                                            <span class="super hide-on-resize">7</span>
+                                            <div class="type">
+                                                <p class="example">UX/UI</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="project-name ex8 on-hover">
+                                            <span class="pre-super display-on-resize">8</span>
+                                            <a href="kara-yoo.html" class="hover-lib p-landing-link-black" id="images/kara/kara_6.jpg">Kara Yoo</a>
+                                            <span class="super hide-on-resize">8</span>
+                                            <div class="type">
+                                                <p class="example">Creative</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="project-name ex9 on-hover">
+                                            <span class="pre-super display-on-resize">9</span>
+                                            <a href="unhcr.html" class="hover-lib p-landing-link-stroke" id="images/philips/unhcr1.jpg">UNHCR</a>
+                                            <span class="super hide-on-resize">9</span>
+                                            <div class="type">
+                                                <p class="example">UX</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="project-name exnull1 on-hover">
+                                            <span class="pre-super display-on-resize">*</span>
+                                            <a href="illustration.html" class="hover-lib p-landing-link-black" id="images/illus/illustration-philips3.png">Illustration</a>
+                                            <span class="super hide-on-resize">*</span>
+                                            <div class="type">
+                                                <p class="example">---</p>
+                                            </div>
+                                        </div>
+
+                                       <!--  <div class="project-name exnull2 on-hover">
+                                            <span class="pre-super display-on-resize">*</span>
+                                            <a href="photography.html" class="hover-lib p-landing-link-black" id="images/dd2017/jo-1.jpg">Photography</a>
+                                            <span class="super hide-on-resize">*</span>
+                                            <div class="type">
+                                                <p class="example">---</p>
+                                            </div>
+                                        </div> -->
+
+                                        <div class="project-name exnull2 on-hover">
+                                            <span class="pre-super display-on-resize white">!</span>
+                                            <a href="#" class="hover-lib p-landing-link-white" id="images/melancholy/pin-header.jpg">ooo secret</a>
+                                            <span class="super hide-on-resize white">!</span>
+                                            <div class="type">
+                                                <p class="example">What's This?</p>
+                                            </div>
+                                        </div>
                                         
-                                    </div>
 
-                                    <div class="small-work-container"><img src="images/IWD-landing.jpg" alt="IWD Program Cover">
-                                        <a href="Work.html">
-                                            <div class="work-info-3">
-                                                <div class="work-text-box">
-                                                    <h2 class="title2 white-text">International Women's Day</h2>
-                                                    <div class="feature-text"><h3 class="title3 white-text">Media Design Coordinator</h3>
-                                                    <h4 class="title4 white-text">Branding and Visual Design for annual milestone event</h4>
-                                                    </div>
-                                                </div>                                           
-                                            </div>
-                                        </a>
+                                        <div class="bg"></div>
                                     </div>
-                                   
-                                    <div class="button-location-right">
-                                        <a href="Work.html" class="button">View Project</a>
-                                    </div>
-
-                                </div>
+                               
                             </div>
-
-                            <div class="grid-col-1of1">
-                                <div class="modular-work-4">
-                                    <a href="Work3.html">
-                                        <div class="large-work-container"><img src="images/db-example-img.png" alt="dropbox stream logo">
-                                            <div class="work-info-4">
-                                                <div class="work-text-box">
-                                                    <h2 class="title2 white-text">Dropbox Stream</h2>
-                                                    <div class="feature-text"><h3 class="title3 white-text">Coming Soon</h3>
-                                                    <h4 class="title4 white-text">UX and Print</h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <div class="button-location-right">
-                                        <a href="Work3.html" class="button">View Project</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                             <div class="grid-col-1of1">
-                                <div class="modular-work-1">
-                                    <a href="Work6.html">
-                                        <div class="large-work-container">
-                                            <img src="images/twitch-splash.jpg" alt="girl on a ring">
-                                            <div class="work-info-1">
-                                                <div class="work-text-box">
-                                                    <h2 class="title2 white-text">Twitch Always On Player</h2>
-                                                    <div class="feature-text"><h3 class="title3 white-text">UX, UI, and Visual Design</h3>
-                                                    <h4 class="title4 white-text">Feature Design Proposal</h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <div class="button-location">
-                                        <a href="Work2.html" class="button">View Project</a>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <!--test
-                            <div class="grid-col-1of1">
-                                <div class="modular-work-4">
-                                    <a href="Work3.html">
-                                        <div class="large-work-container"><img src="images/db-example-img.png" alt="dropbox stream logo">
-                                            <div class="work-info-4">
-                                                <div class="work-text-box">
-                                                    <h2 class="title2 white-text">Dropbox Stream</h2>
-                                                    <div class="feature-text"><h3 class="title3 white-text">Coming Soon</h3>
-                                                    <h4 class="title4 white-text">UX and Print</h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <div class="button-location-right">
-                                        <a href="Work3.html" class="button">View Project</a>
-                                    </div>
-                                </div>
-                            </div>
-                            testttttt-->
                         </div>
-                    </div>
+                
+            
 
-                </div>
+                </section>
+
             </div>
-        </section>
-
-        <section id="contact-landing">
-
-            <div class="contact-container">
-                <div class="grid-row">
-                    <div class="grid-col-1of1">
-                        <h2 class="title1 white-text">You can email me at <a href="#" class="invert-intext-link">kaelinhngo@gmail.com</a>, follow me on Instagram at <a href="https://www.instagram.com/sosilkae" class="invert-intext-link">@sosilkae</a>, or connect with me on <a href="https://www.linkedin.com/in/kaengo" class="invert-intext-link">LinkedIn</a>.</h2>
-					</div>
-				</div>
-			</div>
-		</section>
-
-        <a href="#0" class="cd-top">Top</a>
 
 
-    <footer>
-        <a href="http://www.sfu.ca/~kngo/Resume%202016.pdf" class="footer-item white-text">Resume</a>
-         <!--<a href="Styleguide.html" class="footer-item white-text">Style Guide</a>
-        <a href="Citations.html" class="footer-item white-text">Citations</a>-->
-    </footer>
+            <footer id="footer">
+                <div class="footer">
+                    <div class="grid grid-pad">
+                        <div class="footer-container">
+                             <a href="https://www.instagram.com/kae.linh/" class="footer-item" target="_blank">Instagram</a>
+                             <a href="https://www.linkedin.com/in/kaengo/" class="footer-item" target="_blank">LinkedIn</a>
+                             <a href="mailto:kaelinhngo@gmail.com" class="footer-item">Let's Chat &nbsp;&#x263B;</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div><!-- /container -->
 
 
-	</div>
+        
 
-<!--More Script-->
-    <script src="js/jquery.js"></script>
-    <script src="js/animated-element.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/backtotop.js"></script>
+        <script src="js/classie.js"></script>
+        <script src="js/pathLoader.js"></script>
+        <script src="js/introloader.js"></script>
 
-	</body>
+        <script src="js/main.js"></script>
+        <script type="text/javascript" src="js/hover-lib.js"></script> 
+    </body>
 </html>

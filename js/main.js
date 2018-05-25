@@ -1,55 +1,78 @@
-/*Elements slide in on page load*/
-$(document).ready(function() {
+/*-------- Sticky Nav bar ------*/
+window.onscroll = function() {myFunction()};
 
-    var profileBtn = $('#profile-btn'),
-        worksBtn = $('#profile-btn'),
-        contactBtn = $('#profile-btn');
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
 
-    profileBtn.animate({ left: '20%' }, {
-        duration: 2200
-    });
-    $("#works-btn").animate({ left: '48%' }, {
-        duration: 2000
-    });
-    $("#contact-btn").animate({ left: '63%' }, {
-        duration: 2500
-    });
+function myFunction() {
+	if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky")
+	} else {
+		navbar.classList.remove("sticky");
+	}
+}
 
 
-    $(window).scroll(function(){
-    var y=$(this).scrollTop();                         
-        if (y>300) {
-            $('.exp-menu').fadeOut(500);
-        } else {
-            $('.exp-menu').fadeIn(500);
-        }
-    });
+// // ----------------------- Show /hide main page caption on hover----------------------------------------------
 
-    // /*hide the 3 buttons when scrolled past intro box */
-    // var topOfWorkBtn = worksBtn.offset().top;
-    // var topOfMainContainer = $('#profile-landing').offset().top;
+// function show(id) {
+// 	document.getElementById(id).style.visibility = "visible";
+// };
+// function hide(id) {
+// 	document.getElementById(id).style.visibility = "hidden";
+// };
 
-    // $(window).scroll(function() {
-    //     $('.exp-menu').show();
-    //     if (worksBtn.offset().top > topOfMainContainer) {
-    //         // $('.exp-menu').hide();
-    //         $('.exp-menu').hide();
-    //     } else {
-    //         $('.exp-menu').show(); 
-    //     }
-    // });
-});
+// document.getElementById("caption").style.display = "block";
 
 
-/* Make menu bar appear */     
-    jQuery(document).ready(function($){   
+// function showBlock(id) {
+// 	document.getElementById(id).style.visibility = "visible";
+// };
 
-        $(window).scroll(function(){                          
-            if ($(this).scrollTop() > 300) {
-                $('#menu').fadeIn(500);
-            } else {
-                $('#menu').fadeOut(500);
-            }
-        });
-    });
+// function hideBlock(id) {
+//     // document.getElementById(id).style.display = "block";
+//     document.getElementById(id).style.visibility = "hidden";
+// };
+
+
+// var x_offset = 20;
+// function updatePosition( e ){
+// 	var melp_photo = document.getElementById("melp_photo");
+// 	melp_photo.style.top = e.y - melp_photo.clientHeight/2 + "px" ;
+// 	melp_photo.style.left = e.x - melp_photo.clientWidth + x_offset + "px" ;
+// };
+
+// var x_offset = 20;
+// function updatePosition( e ){
+// 	var kara_photo = document.getElementById("kara_photo");
+// 	kara_photo.style.top = e.y - kara_photo.clientHeight/2 + "px" ;
+// 	kara_photo.style.left = e.x - kara_photo.clientWidth + x_offset + "px" ;
+// };
+
+
+// document.onmousemove = updatePosition;
+
+
+
+
+/*---------Side Nav Responsive------*/
+// function myFunction() {
+//     var x = document.getElementById("myTopnav");
+//     if (x.className === "topnav") {
+//         x.className += " responsive";
+//     } else {
+//         x.className = "topnav";
+//     }
+// }
+
+/* Open the sidenav */
+function openNav() {
+	document.getElementById("mySidenav").style.width = "100%";
+}
+
+/* Close/hide the sidenav */
+function closeNav() {
+	document.getElementById("mySidenav").style.width = "0";
+}
+
 

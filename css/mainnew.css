@@ -1,0 +1,1192 @@
+/* 
+# Portfolio Style Guide
+
+
+## Colors Codes
+
+#212121 (offblack)
+#FAFAFA (offwhite)
+
+
+
+## Table of Contents
+  
+1 Global Rules & Definitions
+
+1.1 General Rules
+1.2 General Typography
+1.3 Images & Figures
+
+
+
+2 Layout Helpers & Reusable Components
+
+2.1 Links
+2.2 Button
+2.3 Landing Layout
+2.4 Pagination
+
+
+
+3 Site Layout
+
+3.1 Header
+3.2 Menu
+3.3 Footer
+
+
+
+4 Landing Page Specific
+
+4.1 Landing - List
+4.2 Landing - Project Pages
+4.3 Landing - About
+
+
+
+5 Extra
+
+5.1 Extra code
+
+*/
+
+
+
+
+/* =====  1 GLOBAL RULES AND DEFINITIONS  ================================================ */
+
+/* -----  1.1 General Rules and Margins  ------------------------------------ */
+
+body{
+  background: #f1f1f1;
+  font-family:'MaisonNeue', Helvetica, sans-serif;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  display: block;
+}
+
+.bg {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: .25s;
+  pointer-events: none;
+}
+
+
+
+/* -----  1.2 Typography -------------------------------------------- */
+
+/* Colours */
+.offwhite {
+  color: #FAFAFA;
+}
+
+.offblack {
+  color: #212121;
+}
+
+.white {
+  color: #FFF;
+}
+
+.black {
+  color: #000;
+}
+
+.grey {
+  color: #A9A9A9;
+}
+
+
+
+/* Headers */
+h1, h2, h5 {
+  margin: 0.25em 0em;
+  line-height: 1.5;
+  font-family:'MaisonNeueExtended', Helvetica, sans-serif;
+}
+
+h3, h4, h6 {
+  margin: 0.25em 0em;
+  line-height: 1.5;
+  font-family: 'MaisonNeue', Helvetica, sans-serif;
+}
+
+/*128*/
+h1{
+  font-size: 8em;
+  font-weight: 500;
+  margin: 0.75em 0em;
+}
+
+/*60*/
+h2{
+  font-size: 3.75em;
+  font-weight: 500;
+}
+
+/*36*/
+h3{
+  font-size: 2.25em;
+  font-weight: 400;
+}
+
+/*24*/
+h4{
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+/*20*/
+h5{
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+/*18*/
+h6{
+  font-size: 1.125em;
+  font-weight: 400;
+}
+
+
+/* Paragraphs */
+/*16*/
+p{
+  font-family: 'MaisonNeue', Helvetica, sans-serif;
+  font-size: 1.0em;
+  line-height: 1.5em;
+  letter-spacing: 0.025em;
+  margin: 1em 0;
+}
+
+
+p{
+  font-family: 'MaisonNeue', Helvetica, sans-serif;
+  font-size: 1.0em;
+  line-height: 1.5em;
+  letter-spacing: 0.025em;
+  margin: 1em 0;
+}
+
+
+
+sup, sub {
+  line-height: 0;
+}
+
+.super{
+  font-family: 'LarishNeue', Times New Roman, serif;
+  /*  vertical-align: 1.7em;*/
+  /*  font-size: 1.15em;*/
+  vertical-align: calc(1.25em + 0.5vw);
+  font-size: calc(12px + 0.5vw);
+  line-height: 1em;
+  letter-spacing: 0.025em;
+  margin: 0.5em 0.5em;
+}
+
+
+
+.p-landing-link-black {
+  z-index: 1000;
+  font-size:3.5vw;
+  font-weight: 500;
+  -webkit-text-fill-color: #000;
+  -webkit-transition: opacity 0.4s ease-out;
+  -moz-transition: opacity 0.4s ease-out;
+  -o-transition: opacity 0.4s ease-out;
+  transition: opacity 0.4s ease-out;
+}
+
+.p-landing-link-black:hover, .p-landing-link-black:focus {
+  opacity: 0.8;
+  -webkit-text-fill-color: #FFF;
+  -webkit-text-stroke: 0.03em transparent;
+}
+
+
+
+.p-landing-link-white {
+  font-size:3.5vw;
+  font-weight: 500;
+  opacity: 0.1;
+  -webkit-text-fill-color: #FFF;
+  -webkit-transition: opacity 0.4s ease-out;
+  -moz-transition: opacity 0.4s ease-out;
+  -o-transition: opacity 0.4s ease-out;
+  transition: opacity 0.4s ease-out;
+}
+
+.p-landing-link-white:hover, .p-landing-link-white:focus {
+  opacity: 0.8;
+  -webkit-text-fill-color: #FFF;
+  -webkit-text-stroke: 0.03em transparent;
+}
+
+
+
+
+.p-landing-link-white-stroke  {
+  z-index: 1000;
+  font-weight: 500;
+  -webkit-text-stroke: 0.025em #FFF;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: opacity 0.4s ease-out;
+  -moz-transition: opacity 0.4s ease-out;
+  -o-transition: opacity 0.4s ease-out;
+  transition: opacity 0.4s ease-out;
+}
+
+.p-landing-link-white-stroke:hover, .p-landing-link-white-stroke:focus {
+  opacity: 1;
+  -webkit-text-fill-color: #FFF;
+  -webkit-text-stroke: 0.0em #000;
+}
+
+
+
+
+
+.p-landing-link-stroke  {
+  z-index: 1000;
+  font-size: 3.5vw;
+  font-weight: 500;
+  -webkit-text-stroke: 0.025em #000;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: opacity 0.4s ease-out;
+  -moz-transition: opacity 0.4s ease-out;
+  -o-transition: opacity 0.4s ease-out;
+  transition: opacity 0.4s ease-out;
+}
+
+.p-landing-link-stroke:hover, .p-landing-link-stroke:focus {
+  opacity: 0.8;
+  -webkit-text-fill-color: #FFF;
+  -webkit-text-stroke: 0.0em #000;
+}
+
+
+
+
+.pagination-name{
+  font-size: 5em;
+  margin: 0.25em 0em;
+  line-height: 1.5;
+  font-family:'MaisonNeueExtended', Helvetica, sans-serif;
+  font-weight: 500;
+  -webkit-text-stroke: 0.025em #000;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: opacity 0.4s ease-out;
+  -moz-transition: opacity 0.4s ease-out;
+  -o-transition: opacity 0.4s ease-out;
+  transition: opacity 0.4s ease-out;
+}
+
+.pagination-name:hover, .pagination-name:focus {
+  opacity: 0.8;
+  -webkit-text-fill-color: #000;
+  -webkit-text-stroke: 0.0em #000;
+}
+
+
+
+/* -----  1.3 Images & Figures  --------------------------------------------- */
+img.set1{
+  width: 80%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  float: right;
+}
+
+img.set2{
+  width: 80%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+img.set3{
+  width: 60%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  float: right;
+}
+
+img.set4{
+  width: 60%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+img.contain{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+img.maxcontain{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  max-width: 800px;
+}
+
+
+img.three-contain1{
+  width: 100%;
+  max-width: 125px;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  left: 35%;
+}
+
+img.three-contain2{
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  left: 25%;
+}
+
+
+
+/* =====  2 LAYOUT HELPERS & REUSABLE COMPONENTS   ======================================= */
+
+
+/* -----  2.1 Links --------------------------------------------------------- */
+
+
+a {
+  text-decoration: none;
+  cursor: crosshair;
+}
+
+a:visited {
+  color: #000;
+}
+
+a:active {
+  color: #A9A9A9;
+}
+
+a:active, a:hover {
+  outline: none;
+}
+
+a:hover, a:focus {
+  color: #fff;
+}
+
+a img {
+  border: none;
+  width: auto;
+  height: 50%;
+}
+
+
+/* -----  2.2 Landing Layout ------------------------------------------------ */
+
+/* -----  2.3 Project Layout ------------------------------------------------ */
+
+/* -----  2.4 Pagination ---------------------------------------------------- */
+
+.pagination {
+  margin: 16em 0; /*spacing from top bottom*/
+}
+
+.pagination-container{
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 4em;
+}
+
+.group{
+  margin:2em 0;
+}
+
+
+.previous-block{
+  float: left;
+  width:50%;
+  display: block;
+}
+
+h5 .previous{
+  float:left;
+}
+
+.pname-previous{
+}
+
+.pname-next{
+  float: right;
+  position: relative;
+}
+
+.preview-previous{
+  /*  width: 40%;*/
+}
+
+.preview-previous:hover .preview_content{
+  display: block;
+}
+
+
+
+
+.next-block{
+  float: right;
+  width:50%;
+  display: block;
+}
+
+.next{
+  text-align: right;
+  position: relative;
+  padding-right: 1.5em;
+}
+
+.preview-next{
+  /*  float: left;  */
+}
+
+.preview-next:hover .preview_content{
+  display: block;
+}
+
+
+
+
+.trans-prev-hi {
+  transform: translate(-375px, 0px);  -webkit-transition: 1500ms ease-in-out;
+  -moz-transition: 1000ms ease-in-out;
+  -o-transition: 1000ms ease-in-out;
+  transition: 1000ms ease-in-out;
+}
+
+.trans-prev-hi:hover{
+  transform: translate(0px, 0px);
+  -webkit-text-fill-color: #000;
+  -webkit-transition: 1500ms ease-in-out;
+  -moz-transition: 1500ms ease-in-out;
+  -o-transition: 1500ms ease-in-out;
+  transition: 1500ms ease-in-out;
+}
+
+.trans-prev-med {
+  transform: translate(-250px, 0px);  -webkit-transition: 1500ms ease-in-out;
+  -moz-transition: 1000ms ease-in-out;
+  -o-transition: 1000ms ease-in-out;
+  transition: 1000ms ease-in-out;
+}
+
+.trans-prev-med:hover{
+  transform: translate(0px, 0px);
+  -webkit-text-fill-color: #000;
+  -webkit-transition: 1500ms ease-in-out;
+  -moz-transition: 1500ms ease-in-out;
+  -o-transition: 1500ms ease-in-out;
+  transition: 1500ms ease-in-out;
+}
+
+.trans-next-hi{
+  transform: translate(375px, 0px);
+  -moz-transition: 1000ms ease-in-out;
+  -o-transition: 1000ms ease-in-out;
+  transition: 1000ms ease-in-out;
+}
+
+.trans-next-hi:hover{
+  transform: translate(0px, 0px);
+  -webkit-text-fill-color: #000;
+  -webkit-transition: 1500ms ease-in-out;
+  -moz-transition: 1500ms ease-in-out;
+  -o-transition: 1500ms ease-in-out;
+  transition: 1500ms ease-in-out;
+}
+
+
+.trans-next-med{
+  transform: translate(200px, 0px);
+  -moz-transition: 1000ms ease-in-out;
+  -o-transition: 1000ms ease-in-out;
+  transition: 1000ms ease-in-out;
+}
+
+.trans-next-med:hover{
+  transform: translate(0px, 0px);
+  -webkit-text-fill-color: #000;
+  -webkit-transition: 1500ms ease-in-out;
+  -moz-transition: 1500ms ease-in-out;
+  -o-transition: 1500ms ease-in-out;
+  transition: 1500ms ease-in-out;
+}
+
+
+
+
+
+.hover_img a{
+
+}
+
+.hover_img a span{
+  position: relative;
+  display: none;
+  z-index: -1000;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+/*
+NEED TO DISPLAY TEXT ON ABOUT PAGE*/
+.hover_img a:hover span{
+/*  display: block;*/
+}
+
+/*hide previous/next image pagination*/
+.preview_content {
+  display: none;
+}
+
+.center-hover-img {
+  height: auto;
+  position: absolute;
+  z-index: -1000;
+  width: 50%;
+  min-width: 300px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);  /* Chrome, Opera 15+, Safari 3.1+ */
+  -ms-transform: translate(-50%, -50%);  /* IE 9 */
+  transform: translate(-50%, -50%);  /* Firefox 16+, IE 10+, Opera */
+}
+
+.center-hover-img:hover{
+}
+
+
+.about-hover-img{
+  margin: 2em 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+/* =====  3 SITE LAYOUT  ================================================================= */
+
+/* -----  3.1 Header -------------------------------------------------------- */
+
+/* -----  3.2 Navigation Menu ----------------------------------------------- */
+
+
+.navbar{
+  overflow: hidden;
+  background-color: none;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 100;
+}
+
+.menu-item{
+  font-family: 'MaisonNeueExtended', Helvetica, sans-serif;
+  font-size: 1.125em;
+  float: right;
+  margin: 1.75em 1.5em 1.5em 0;
+  padding: 0 0.25em;
+  display: block;
+}
+
+.menu-item-left{
+  font-family: 'MaisonNeueExtended', Helvetica, sans-serif;
+  font-size: 1.125em;
+  float: left;
+  margin: 1.75em 1.5em 1.5em 0;
+  padding: 0 0.25em;
+  display: block;
+}
+
+.menu-item:hover, .menu-item:active, .menu-item:focus{
+  border-bottom: 2px solid;
+  border-color: inherit;
+}
+
+
+
+
+/*Side Nav*/
+.topnav a.icon{
+  color: grey;
+}
+
+.topnav .icon{
+  display: none;
+}
+
+.icon{
+  font-family: 'MaisonNeueExtended', Helvetica, sans-serif;
+  font-size: 1.125em;
+  float: right;
+  margin: 1.75em 1.5em 1.5em 0;
+  padding: 0 0.25em;
+  display: block;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 8.3em;
+}
+
+.sidenav a {
+  font-family: 'MaisonNeueExtended', Helvetica, sans-serif;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  font-size: 2em;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  margin-bottom: none;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 2.5em;
+  right: 0.5em;
+  font-size: 1.125em;
+}
+
+
+
+/* -----  3.3 Footer ----------------------------------------------- */
+.footer{
+  overflow: hidden;
+  background-color: none;
+  position: absolute; 
+  bottom: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  padding-bottom: 1.5em;
+  z-index: 1000;
+  bottom:0;
+  clear:both;
+}
+
+.footer-projects{
+  overflow: hidden;
+  background-color: none;
+  position: absolute;
+  bottom: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  padding-bottom: 1.5em;
+  z-index: 1000;
+  bottom:0;
+  clear:both;
+}
+
+.footer-container{
+  z-index: 1000;
+}
+
+.footer-item{
+  font-family: 'MaisonNeueExtended', Helvetica, sans-serif;
+  font-size: 1.125em;
+  color: #000;
+  float: left;
+  margin: 1.75em 1.5em 1.5em 0;
+  padding: 0 0.25em 0 0;
+  display: block;
+}
+
+.footer-item:hover, .footer-item:active, .footer-item:focus{
+  color: #FFF;
+}
+
+
+
+
+ /* =====  4 LANDING PAGE SPECIFIC  ======================================================= */
+
+ /* -----  4.1 Landing - List  -------------------------------------------- */
+.project-holder {
+  max-width: 80vw;
+}
+
+.project-name{
+  font-family:'MaisonNeueExtended', Helvetica, sans-serif;
+  display: inline-block;
+  padding-right: 1.75em;
+}
+
+
+/*- Twitch -*/
+.ex1{
+}
+
+.project-holder .ex1:hover ~ .bg{
+  background: #6441A4;
+}
+
+/*-- dutchDesign17 --*/
+.ex2{
+}
+
+.project-holder .ex2:hover ~ .bg{
+  background: #FCFC00;
+}
+
+/*-- Sleepover --*/
+.ex3{
+}
+
+.project-holder .ex3:hover ~ .bg{
+  background: #123055;
+}
+
+/*-- NBA --*/
+/*red: #CB0729
+blue: #1A408B*/
+.ex4{
+}
+
+.project-holder .ex4:hover ~ .bg{
+  background: #CB0729;
+}
+
+/*-- Experience Hue --*/
+.ex5{
+}
+
+.project-holder .ex5:hover ~ .bg{
+  background: #212121;
+}
+
+/*-- Melancholy --*/
+.ex6{
+}
+
+.project-holder .ex6:hover ~ .bg{
+  background: #212121;
+}
+
+/*-- Saved Messages --*/
+.ex7{
+}
+
+.project-holder .ex7:hover ~ .bg{
+  background: #44c7f3;
+}
+
+/*-- Kara --*/
+.ex8{
+}
+
+.project-holder .ex8:hover ~ .bg{
+  background: #BF967A;
+}
+
+/*-- RV2020 --*/
+.ex9{
+}
+
+.project-holder .ex9:hover ~ .bg{
+  background: #FFD519;
+}
+
+
+/*-- Illustration Photography--*/
+.exnull1{
+}
+
+.project-holder .exnull1:hover ~ .bg{
+  background: #FFF;
+}
+
+.exnull2{
+}
+
+.project-holder .exnull2:hover ~ .bg{
+  background: #2B7F47;
+}
+
+
+
+
+/* Hover for type of project*/
+.type{
+  display: none;
+  position: fixed;
+  right: 58px;
+  bottom: 18px;
+}
+
+.on-hover:hover .type{
+  display: block;
+}
+
+p.example{
+ font-family: 'MaisonNeueExtended', Helvetica, sans-serif;
+ font-size: 1.125em;
+ margin: 1.75em 1.5em 1.5em 0;
+ padding: 0 0.25em 0 0;
+}
+
+
+
+
+/* -----  4.2 Landing - Project Pages ------------------------------------------------ */
+
+
+/*header image overflow hidden*/
+.main section {
+  overflow: hidden;
+}
+
+.main section.page1{
+  overflow: hidden;
+}
+
+.main section.page1 .page_container {
+  overflow: hidden;
+}
+
+
+
+/*Section Colour Backgrounds*/
+.main section.peach{
+  background: rgb(230, 217, 200);
+}
+
+.main section.navyblue{
+  background: rgb(19, 48, 85);
+}
+
+.main section.fullwhite{
+  background: #fff;
+}
+
+
+.main section.fullblack{
+  background: #000;
+}
+
+
+/** Main project title **/
+.project-title{
+  font-size: calc(2.25em + 5vw);
+}
+
+.comp-title-image{
+  margin-top: -3em; /*move image up a bit*/
+}
+
+.project-title-shift{
+  margin-top: -12em; /*move image up a bit*/
+
+}
+
+
+
+/* Description 1*/
+.textbox{
+  margin: 5em 0;
+}
+
+.project-catchline{
+  margin: 2em 0em;
+  padding: 2em;
+}
+
+.project-description{
+  margin: 0em;
+  padding: 0 2em;
+}
+
+.center-description{
+  margin: 0 6em;
+  padding: 0 6em;
+}
+
+
+/*spacing from top*/
+.comp-top-title{
+  margin-top: 5em;
+}
+
+/*spacing for one col img, not fullscreen*/
+.comp-one-img{
+  margin: 5em 0;
+}
+
+/*spacing for general vertical centering*/
+.center-container-small{
+  margin: 4% 0;
+}
+
+.center-container{
+  margin: 8% 0;
+}
+
+.center-container-mid{
+  margin: 12% 0;
+}
+.brief-center-container{
+  margin: 15% 0;
+}
+
+/*spacing for tall photos*/
+.photo-container-mid{
+  margin: 3em 0;
+  padding: 0 0 4em 0;
+}
+
+.photo-container-hi{
+  margin: 8em 0;
+  padding: 0 0 4em 0;
+}
+
+.photo-container-extrahi{
+  margin: 12em 0;
+  padding: 0 0 4em 0;
+}
+
+
+
+
+
+
+
+
+
+/*size of fullscreen img*/
+.project-fullscreen-images{ 
+  width: 100%;
+  height: auto;
+  min-height: auto;
+  min-width: 1080px;
+}
+
+
+/* for video */
+
+
+#scrollbox{
+  overflow-y: scroll !important;
+}
+
+.project-fullscreen-video{ 
+  width: 100%;
+  height: auto;
+  min-height: auto;
+  min-width: 1680px;
+}
+
+.project-sidescreen-video{ 
+  width: 100%;
+  height: auto;
+  min-height: auto;
+}
+
+.project-centerscreen-video{ 
+  width: 100%;
+  height: auto;
+  min-height: auto;
+  min-width: 800px;
+}
+
+.project-screen-video{ 
+  width: 65%;
+  height: auto;
+  /*overflow: hidden;*/
+  position: relative;
+  left: 100px;
+  bottom: 30px;
+}
+
+.center-project-screen-video{
+  width: 75%;
+  height: auto;
+}
+
+.project-ex-images{
+  width: 100%;
+  height: auto;
+  min-height: auto;
+  min-width: 450px;
+}
+
+
+/*center imgs of full images*/
+.float_center {
+  float: right;
+  position: relative;
+  left: -50%;
+  text-align: left;
+}
+
+.float_center > .child {
+  position: relative;
+  left: 50%;
+}
+
+.float_center > .child-2 {
+  position: relative;
+  left: 63%;
+}
+
+
+.comp-brief, .comp-brief2{
+}
+
+/*extra spacing on paragraphs*/
+.comp-half-text p, .textbox p {
+  padding-right: 1.75em;
+}
+
+.center-text{
+  text-align: center;
+}
+
+
+
+
+/* -----  4.3 Landing - About --------------------------------------------- */
+
+.about-bg{
+  background-color: #000;
+}
+
+.about{
+  color: #f1f1f1; /*all font color*/
+}
+
+.about-bg .navbar a:visited{
+  color: #fff;
+}
+
+.about a:visited{
+  color: #fff;
+}
+
+.fact{
+  display: inline-flex;
+}
+
+
+/*parts are spacings*/
+.part1, .part4 {
+  padding: 3em 0 10em 0;
+}
+
+.part2, .part3{
+  padding: 6em 0;
+}
+
+.part1 h2{
+  line-height: 1.4;
+}
+
+.part2 p{
+  font-family: 'MaisonNeueExtended', Helvetica, sans-serif;
+  font-weight: 100;
+  line-height: 2;
+  font-size: 1.3em;
+  padding-bottom: 2em;
+}
+
+p.urgent{
+  font-family: 'MaisonNeueExtended', Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 1.75em;
+  padding-bottom: 2em;
+  letter-spacing: 1.5px;
+}
+
+
+
+/* =====  5 EXTRA  ======================================================================= */
+
+/* -----  5.1 Extra Code  --------------------------------------------------- */
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix:before, .clearfix:after {
+  content: '';
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.loader{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999999;
+  background: url('../images/loading.gif') 50% 50% no-repeat #F9F0E5;
+  background-size: auto;
+  overflow: hidden;
+}
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1500ms;
+  animation-name: animatebottom;
+  animation-duration: 1500ms
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+

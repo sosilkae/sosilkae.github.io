@@ -1,0 +1,36 @@
+img.hover-lib-visible {
+/*	color: black;*/
+	z-index: -1000;
+	position: absolute;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	top: 50%;  /* position the top  edge of the element at the middle of the parent */
+	left: 50%; /* position the left edge of the element at the middle of the parent */
+
+	transform: translate(-50%, -50%);
+
+	-webkit-transition: opacity 500ms ease-in-out;
+       -moz-transition: opacity 500ms ease-in-out;
+        -ms-transition: opacity 500ms ease-in-out;
+         -o-transition: opacity 500ms ease-in-out;
+            transition: opacity 500ms ease-in-out;
+
+} 
+
+img.hover-lib-visible:hover {
+	z-index: -1000;
+    filter: alpha(opacity=50);
+    opacity: 0.0;
+    pointer-events: none;
+}
+
+img.hover-lib-hidden {
+	z-index: -1000;
+    filter: alpha(opacity=50);
+    opacity: 0.0;
+    pointer-events: none;
+}
+
+
