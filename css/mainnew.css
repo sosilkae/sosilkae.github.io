@@ -575,8 +575,8 @@ NEED TO DISPLAY TEXT ON ABOUT PAGE*/
   width: 50%;
   min-width: 300px;
   left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);  /* Chrome, Opera 15+, Safari 3.1+ */
+
+  -webkit-transform: translate(-50%, -50%);  /* Chrome, Opera 15+, Safari 3.1+ 
   -ms-transform: translate(-50%, -50%);  /* IE 9 */
   transform: translate(-50%, -50%);  /* Firefox 16+, IE 10+, Opera */
 }
@@ -1040,8 +1040,15 @@ p.example{
 }
 
 .center-project-screen-video{
-  width: 65%;
+  width: 75%;
   height: auto;
+}
+
+.video-center{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  display: block;
 }
 
 .project-ex-images{
