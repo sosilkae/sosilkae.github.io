@@ -21,23 +21,12 @@
 	padding-right: 2.25em /* column-space */
 }
 
-/* Take out for now
-
-[class*='col-']:last-child {
-	padding-right: 0;
-}*/
-
 [class*='col-1-1']:last-child {
 	padding-right: 0;
 }
 
-
-
-
 .grid {
 	width: 100%;
-	max-width: 1080px;
-	min-width: 748px; /* when using padded grid on ipad in portrait mode, width should be viewport-width - padding = (768 - 20) = 748. actually, it should be even smaller to allow for padding of grid containing element */
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -49,17 +38,16 @@
 }
 
 .grid-pad {
-	padding-top: 2em;
-	/* padding-left: 20px; grid-space to left */
-	padding-right: 0; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-20px=0 */
+	padding: 2em 4em;
 }
 
 .push-right {
 	float: right;
 }
 
-/* Content Columns */
 
+
+/* Content Columns */
 .col-1-1 {
 	width: 100%;
 }
@@ -182,162 +170,107 @@
 .push-1-12 {
 	margin-left: 8.33%
 }
-/*
-@media handheld, only screen and (max-width: 767px) {*/
 
-/*@media handheld, only screen and (max-width: 1200px) {*/
 
-/*@media handheld, only screen and (max-width: 375px) {*/
-
-/*@media handheld, only screen and (max-width: 320px) {*/
-
-@media handheld, only screen and (max-width: 1200px) { 
+/*------------------1200 for regular desktop------------------*/
+@media handheld, only screen and (min-width: 1200px) { 
 	.grid {
 		width: 100%;
-		min-width: 0;
-		max-width: 1200px;
+/*		min-width: 0;
+		max-width: 1200px;*/
 		margin-left: 0;
 		margin-right: 0;
-		padding-left: 4em; /* grid-space to left */
-		padding-right: 4em; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-10px=10px */
 	}
-/*TEST*/
-	/*[class*='col-'] {
-		width: auto;
-		float: none;
-		margin: 10px 0;
-		padding-left: 0;
-		padding-right: 2.75em;
-	}*/
+
+	.grid-pad{
+		padding: 2em 4em;
+	}
 
 
 	[class*='col-'] [class*='col-'] {
 		padding-right: 0;
 	}
 
-} /*testing*/
-@media handheld, only screen and (max-width: 900px) { 
+}
+
+/*------------------900 for small desktop------------------*/
+@media handheld, only screen and (min-width: 900px) { 
 	.grid {
-		width: 100%;
+		width: 100%;/*
 		min-width: 0;
-		max-width: 1200px;
+		max-width: 1200px;*/
 		margin-left: 0;
 		margin-right: 0;
-		padding-left: 4em; /* grid-space to left */
-		padding-right: 4em; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-10px=10px */
-	}
-/*TEST*/
-
-
-[class*='col-'] {
-		padding-right: none;
 	}
 
-[class*='col-'] [class*='col-'] {
-		padding-right: none;
-		padding-left:none;
+	.grid-pad{
+		padding: 2em 4em;
 	}
 
+	[class*='col-'] {
+			padding-right: none;
+		}
 
-.col-1-2, .col-6-12 {
-    width: 100%;
-	}
+	[class*='col-'] [class*='col-'] {
+			padding-right: none;
+			padding-left:none;
+		}
 
 	.col-1-2 .col-test {
-    width: 50%;
+		width: 50%;
 	}
 
 	.col-1-3, .col-4-12 {
-  /*  width: 16.667%;*/
+		/*  width: 16.667%;*/
 	}
 
-    .col-2-3 {
-    	width: 66.6%;
-    }
-
-    .col-10-12{
-    	width: 80%;
-    }
-
-    .col-2-12{
-    	width: 15.85%;
-    }
-
-    .col-1-2 .mobile-col-1-2 .col-test{
-    	width: 50%;
+	.col-2-3 {
+		width: 66.6%;
 	}
 
-}
-
-
-
-@media handheld, only screen and (max-width: 699px){
-
-	.hide-on-resize{
-		display: none !important;
-		width: 0;
-		height: 0;
+	.col-10-12{
+		width: 80%;
 	}
 
-	.onepage-wrapper .section {
-    width: 100%;
-    height: auto;
+	.col-2-12{
+	/*	width: 15.85%;*/
+	    width: 20%;
+	}
+
+	.col-1-2 .mobile-col-1-2 .col-test{
+		width: 50%;
 	}
 
 }
 
 
-@media handheld, only screen and (min-width: 0px) and (max-width: 700px){
-	.pre-super{
-	  font-family: 'LarishNeue', Times New Roman, serif;
-	  vertical-align: calc(1.25em + 0.5vw);
-	  font-size: 0.5em;
-	  line-height: 1em;
-	  letter-spacing: 0.025em;
-	  margin: 0.5em 0.8em 0.5em 0;
-	  display: inline-block;
-	}
-}
-
-@media screen and (min-width: 700px) and (max-width: 3000px) {
-	.pre-super{
-	display:none;
-	}
-}
 
 
 
 
 
 
+/*------------------599 for mobile------------------*/
 
-	/* Mobile Layout */
-
-/*@media handheld, only screen and (max-width: 480px){*/
-	@media handheld, only screen and (max-width: 699px){
-
-
+@media handheld, only screen and (max-width: 599px){
 	.grid {
 		width: 100%;
-		min-width: 0;
-	/*	max-width: 450px;*/
 		margin-left: 0;
 		margin-right: 0;
-		padding-left: 2em; /* grid-space to left */
-		padding-right: 2em; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-10px=10px */
 	}
 
 
 	.grid-pad{
-    padding-top: 0.75em;
-  }
+    	padding-top: 0.75em;
+    	padding-left: 2em; /* grid-space to left */
+		padding-right: 2em; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-10px=10px */
+	}
   
 	[class*='col-'] {
 		width: auto;
 		float: none;
 		margin: 10px 0;
 		padding-left: 0;
-		/*padding-right: 2em;*/ /* column-space  */
 		padding-right: 0em;
 	}
 
@@ -351,7 +284,6 @@
 		float: left;
 		margin: 0 0 10px;
 		padding-left: 0;
-		/*padding-right: 2.75em; /* column-space */
 		padding-right: 0em;
 		padding-bottom: 0;
 	}
@@ -362,13 +294,13 @@
 	.mobile-col-2-3, .mobile-col-8-12 {
 		width: 66.66%;
 	}
-	
-	/*.mobile-col-1-2, .mobile-col-6-12 {
-		width: 50%;
-	}*/
 
 	.mobile-col-1-2, .mobile-col-6-12 {
 		width: 100%;
+	}
+
+	.col-1-2, .col-6-12 {
+	    width: 100%;
 	}
 
 	.mobile-col-1-3, .mobile-col-4-12 {
@@ -438,8 +370,6 @@
 		width: 0;
 		height: 0;
 	}
-
-
 
     .col-1-2 .mobile-col-1-2 .col-test{
     	width: 100%;

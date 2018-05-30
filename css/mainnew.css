@@ -914,7 +914,7 @@ p.example{
 
 /** Main project title **/
 .project-title{
-  font-size: calc(2.25em + 5vw);
+  font-size: calc(1em + 5vw);
 }
 
 .comp-title-image{

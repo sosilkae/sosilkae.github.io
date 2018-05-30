@@ -1,51 +1,59 @@
-/*Navigation Bar*/
+/*------------Mobile Responsiveness--------*/
 
-@media screen and (max-width: 699px) {
+
+
+
+/* Side Nav Reponsiveness */
+@media handheld, only screen and (max-width: 600px){
+  .hide-on-resize{
+    display: none !important;
+    width: 0;
+    height: 0;
+  }
+
+  .onepage-wrapper .section {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media handheld, only screen and (min-width: 0px) and (max-width: 601px){
+  .pre-super{
+    font-family: 'LarishNeue', Times New Roman, serif;
+    vertical-align: calc(1.25em + 0.5vw);
+    font-size: 0.5em;
+    line-height: 1em;
+    letter-spacing: 0.025em;
+    margin: 0.5em 0.8em 0.5em 0;
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 3000px) {
+  .pre-super{
+  display:none;
+  }
+}
+
+
+
+/* General Groups*/
+
+@media handheld, only screen and (max-width: 599px){
+  .navbar{
+		position: relative;
+	}
+
   .topnav a{
-  	display: none;
+    display: none;
   }
   .topnav a.icon {
     float: right;
     display: block;
   }
 
-  .footer-projects {
-    position: absolute;
-    padding-bottom: 1em;
-    bottom:0;
-  }
-
-
-  .footer {
-    position: relative;
-    padding-bottom: 2em;
-  }
-
-  .footer-item {
-    margin-right: 1.6em;
-    padding: 0;
-    font-size: 0.9em;
-  }
-
-  .center-container{
-    margin: 5em 0;
-  }
-
-  .comp-half-text, .comp-brief{
-  margin: 1em 0;
-  }
-
-  img.three-contain1, img.three-contain1 {
-  position: relative;
-  left: 0;
-}
-
-
-}
-
-@media screen and (max-width: 480px) {
   .topnav.responsive {
-  	position: relative;
+    position: relative;
   }
   .topnav.responsive .icon {
 /*    position: relative;*/
@@ -58,13 +66,26 @@
     display: block;
     text-align: left;
   }
-}
 
-@media handheld, only screen and (max-width: 480px){
-	
-  .navbar{
-		position: relative;
-	}
+
+
+  .footer-projects {
+    position: absolute;
+    padding-bottom: 1em;
+    bottom:0;
+  }
+
+  .footer {
+    position: relative;
+    padding-bottom: 2em;
+  }
+
+  .footer-item {
+    margin-right: 1.6em;
+    padding: 0;
+    font-size: 0.9em;
+  }
+
 
 	.main-container{
 		margin-top: 0;
@@ -75,6 +96,12 @@
     margin-top: 0;
     margin-bottom: 0;
   }
+
+  .center-container{
+    margin: 5em 0;
+  }
+
+
 
   .project-name, .full-imgs-extra {
     padding-right:0;
@@ -92,24 +119,37 @@
     margin: 1.75em 0 1.5em 0;
   }
 
+  .comp-half-text, .comp-brief{
+  margin: 1em 0;
+  }
+
+  img.three-contain1, img.three-contain1 {
+  position: relative;
+  left: 0;
+  }
+
   .project-catchline {
     margin: 0em;
     padding: 1em 0em;
   }
 
+
 }
 
-@media screen and (max-height: 480px) {
-/*  .sidenav {
-    padding-top: 15px;
-  }*/
+
+@media screen and (max-height: 599px) {
+
   .sidenav a {
     font-size: 18px;
   }
 
 }
 
-@media handheld, only screen and (max-width: 699px) and (min-width: 320px){
+
+
+
+/* Landing Typography  */
+@media handheld, only screen and (max-width: 599px)/*and (min-width: 320px)*/{
   .p-landing-link-black, .p-landing-link-stroke{
       font-size: 1.39em!important;
     }
@@ -118,9 +158,90 @@
       display: block;
       padding: 0.5em 0; 
   }
+}
+
+
+@media handheld, only screen and (max-width: 1024px){
+  .col-7-12, .mobile-col-7-12{
+    width: 100%;
+  }
+  .col-5-12, .mobile-col-5-12{
+    width: 100%;
   }
 
-  
+  .col-5-12 .textbox, .col-5-12 .center-container, .col-5-12 .center-container-mid{
+    margin: 0;
+  }
+
+  .col-7-12 .textbox, .col-7-12 .center-container, .col-7-12 .center-container-mid{
+    margin: 0;
+  }
+
+
+    #movetotop {
+      float: right;
+    }
+    #movetobottom {
+      float: left;
+    }
+
+
+}
+
+
+/*Project Page Responsiveness*/
+@media handheld, only screen and (max-width: 599px){
+
+/*For Header Project Titles*/
+  .comp-top-title .mobile-col-2-3, .comp-top-title .col-2-3{
+    width: 100%;
+  }
+
+  .project-fullscreen-images{
+    width: 100%;
+    height: auto;
+    min-width: 0;
+  }
+
+  .project-description{
+    padding: 0;
+  }
+
+  img.set1, img.set3{
+    width:100%;
+    float:none;
+  }
+
+  img.set2, img.set4{
+    width:100%;
+  }
+
+  .project-catchline{
+    padding: 1em 0 0 0;
+  }
+
+
+
+}
+
+
+/*Video Page Responsiveness*/
+@media handheld, only screen and (max-width: 769px){
+
+  .project-fullscreen-video {
+    width: 100%;
+      height: auto;
+      min-height: auto;
+      min-width: 0;
+  }
+
+}
+
+
+
+
+
+
 
 
 /*

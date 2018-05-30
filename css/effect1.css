@@ -74,7 +74,7 @@
 	max-width: 1100px;
 }
 
-@media handheld, only screen and (max-width: 480px){
+@media handheld, only screen and (max-width: 599px){
   .ip-main {
     padding: 0;
   }
