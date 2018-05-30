@@ -108,7 +108,7 @@ section {
 
 
 /* Headers */
-h1, h2, h5 {
+h1, h2, h5, h8{
   margin: 0.25em 0em;
   line-height: 1.5;
   font-family:'MaisonNeueExtended', Helvetica, sans-serif;
@@ -154,6 +154,11 @@ h5{
 /*18*/
 h6{
   font-size: 1.125em;
+  font-weight: 400;
+}
+
+h8{
+  font-size: 0.9em;
   font-weight: 400;
 }
 
@@ -1044,10 +1049,16 @@ p.example{
   height: auto;
 }
 
-.video-center{
+.important-center{
   margin: 0 auto;
   width: 100%;
-  max-width: 800px;
+  max-width: 650px;
+  display: block;
+}
+
+.auto-center{
+  margin: 0 auto;
+  width: 100%;
   display: block;
 }
 
