@@ -69,6 +69,11 @@ section {
   display: block;
 }
 
+.extra-bottom{
+  margin-bottom: 5em;
+  padding-bottom: 15em;
+}
+
 .bg {
   position: fixed;
   z-index: -1;
@@ -463,7 +468,7 @@ h5 .previous{
 .next{
   text-align: right;
   position: relative;
-  padding-right: 1.5em;
+/*  padding-right: 1.5em;*/
 }
 
 .preview-next{
@@ -595,6 +600,22 @@ NEED TO DISPLAY TEXT ON ABOUT PAGE*/
   width: 100%;
   height: auto;
   overflow: hidden;
+}
+
+
+.vertical-hover-img{
+  height: auto;
+  position: absolute;
+  z-index: -1000;
+  width: 50%;
+  max-width: 300px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);  /* Chrome, Opera 15+, Safari 3.1+ 
+  -ms-transform: translate(-50%, -50%);  /* IE 9 */
+  transform: translate(-50%, -50%);  /* Firefox 16+, IE 10+, Opera */
+}
+
+.vertical-hover-img:hover{
 }
 
 
