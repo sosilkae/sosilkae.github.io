@@ -938,6 +938,10 @@ p.example{
   font-size: calc(1em + 5vw);
 }
 
+.project-title2{
+  font-size: calc(2em + 2vw);
+}
+
 .comp-title-image{
   margin-top: -3em; /*move image up a bit*/
 }
@@ -1024,7 +1028,7 @@ p.example{
   width: 100%;
   height: auto;
   min-height: auto;
-  min-width: 1080px;
+  min-width: 1440px;
 }
 
 
