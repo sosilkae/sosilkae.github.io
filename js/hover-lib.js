@@ -1,7 +1,7 @@
 // worlds smallest gif image: 26 bytes
-var placeholder = "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D";
+var placeholder = "";
 // image to display when there is an error loading image.
-var errorholder = "img/error.png"
+var errorholder = ""
 
 // append a image tag with placeholder src to every link using hover-lib class
 jQuery("a.hover-lib").append(

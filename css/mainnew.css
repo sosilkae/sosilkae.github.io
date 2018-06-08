@@ -208,7 +208,7 @@ sup, sub {
 
 .p-landing-link-black {
   z-index: 1000;
-  font-size:3.5vw;
+  font-size: 3.5vw;
   font-weight: 500;
   -webkit-text-fill-color: #000;
   -webkit-transition: opacity 0.4s ease-out;
@@ -226,7 +226,7 @@ sup, sub {
 
 
 .p-landing-link-white {
-  font-size:3.5vw;
+  font-size: 3.5vw;
   font-weight: 500;
   opacity: 0.1;
   -webkit-text-fill-color: #FFF;
@@ -878,9 +878,11 @@ blue: #1A408B*/
 .type{
   display: none;
   position: fixed;
-  right: 58px;
-  bottom: 18px;
+  right: 4em;
+  bottom: 3em;
 }
+
+
 
 .on-hover:hover .type{
   display: block;
@@ -888,10 +890,16 @@ blue: #1A408B*/
 
 p.example{
  font-family: 'MaisonNeueExtended', Helvetica, sans-serif;
- font-size: 1.125em;
+ font-size: 1.5em;
  margin: 1.75em 1.5em 1.5em 0;
  padding: 0 0.25em 0 0;
 }
+
+
+  .index-mobile-only{
+    display:none;
+  }
+
 
 
 
