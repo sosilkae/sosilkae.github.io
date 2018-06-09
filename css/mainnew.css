@@ -659,7 +659,7 @@ NEED TO DISPLAY TEXT ON ABOUT PAGE*/
 }
 
 .menu-item:hover, .menu-item:active, .menu-item:focus{
-  border-bottom: 2px solid;
+/*  border-bottom: 2px solid;*/
   border-color: inherit;
 }
 
@@ -873,6 +873,18 @@ blue: #1A408B*/
 
 
 
+/*In-text link*/
+
+.in-text-link{
+  border-bottom: 2px solid;
+  border-color: inherit;
+}
+
+.in-text-link:hover{
+  border-bottom: 2px solid;
+  border-color: inherit;
+}
+
 
 /* Hover for type of project*/
 .type{
@@ -896,9 +908,34 @@ p.example{
 }
 
 
-  .index-mobile-only{
-    display:none;
-  }
+.index-mobile-only{
+  display:none;
+}
+
+
+
+.hide-example{
+  position: absolute;
+  display: none;
+  z-index: 1;
+}
+
+.show-example:hover ~ .hide-example{
+  display: block;
+  overflow: visible;
+  pointer-events: none;
+  position: fixed;
+  top: 10vw;
+  left: 37vw;
+}
+
+img.hide-example{
+  max-width:425px;
+  height:auto;
+}
+
+
+
 
 
 

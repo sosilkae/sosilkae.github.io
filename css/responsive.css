@@ -458,9 +458,31 @@
   .exp-doublecontent .col-1-2, .exp-doublecontent .mobile-col-1-2{
     width:100%;
   }
-
-
 }
+
+
+
+@media handheld, only screen and (max-width: 1025px){
+.show-example:hover ~ .hide-example{
+  top: 10vw;
+  left: 30vw;
+}
+}
+
+@media handheld, only screen and (max-width: 599px){
+.show-example:hover ~ .hide-example{
+  top: 30vw;
+  left: 0vw;
+  opacity: 0.95;
+}
+}
+@media handheld, only screen and (max-width: 320px){
+img.hide-example{
+  max-width:320px;
+  }
+}
+
+
 
 
 
