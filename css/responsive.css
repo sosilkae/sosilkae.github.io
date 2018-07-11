@@ -329,6 +329,16 @@
     margin: 0;
   }
 
+  .flex-container .textbox2{
+    margin: 0;
+    padding-left: 0;
+  }
+
+  .flex-container .textbox3{
+    margin: 0;
+    padding-right: 0;
+  }
+
   .flex-container .col-7-12, .flex-container .mobile-col-7-12{
     width: 100%;
   }
@@ -341,6 +351,18 @@
   }
 
   .project-screen-video {
+      margin-top: 1em;
+      width:100%;
+      left:0;
+  }
+
+    .project-screen-video-push-right {
+      margin-top: 1em;
+      width:100%;
+      left:0;
+  }
+
+    .project-screen-video-push-left {
       margin-top: 1em;
       width:100%;
       left:0;

@@ -113,7 +113,7 @@ section {
 
 
 /* Headers */
-h1, h2, h5, h8{
+h1, h2, h5, h8 {
   margin: 0.25em 0em;
   line-height: 1.5;
   font-family:'MaisonNeueExtended', Helvetica, sans-serif;
@@ -140,8 +140,9 @@ h2{
 
 /*36*/
 h3{
-  font-size: 2.25em;
+  font-size: 2.75em;
   font-weight: 400;
+  line-height: 1;
 }
 
 /*24*/
@@ -978,6 +979,11 @@ img.hide-example{
 }
 
 
+.main section.sm-grey{
+  background: #F3F3F3;
+}
+
+
 /** Main project title **/
 .project-title{
   font-size: calc(1em + 5vw);
@@ -1001,6 +1007,16 @@ img.hide-example{
 /* Description 1*/
 .textbox{
   margin: 5em 0;
+}
+
+.textbox2{
+  margin: 5em 0;
+  padding-left: 100px;
+}
+
+.textbox3{
+  margin: 5em 0;
+  padding-right: 100px;
 }
 
 .project-catchline{
@@ -1110,6 +1126,22 @@ img.hide-example{
   /*overflow: hidden;*/
   position: relative;
   left: 100px;
+}
+
+.project-screen-video-push-right{ 
+  width: 65%;
+  height: auto;
+  /*overflow: hidden;*/
+  position: relative;
+  left: 150px;
+}
+
+.project-screen-video-push-left{ 
+  width: 65%;
+  height: auto;
+  /*overflow: hidden;*/
+  position: relative;
+  left: 50px;
 }
 /*
 .center-project-screen-video{
