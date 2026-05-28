@@ -86,11 +86,46 @@ footer span {
     width: 100%;
   }
 
+
   footer {
-    position: static;
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 24px 24px;
-    font-size: 16px;
-  }
+  position: fixed;
+  left: 0;
+  bottom: 28px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 480px 1fr auto;
+  column-gap: 30px;
+  align-items: center;
+  padding: 0 30px;
+  font-size: 18px;
 }
+
+footer a,
+footer span {
+  color: #111;
+  text-decoration: none;
+}
+
+.footer-left {
+  grid-column: 1;
+  justify-self: start;
+}
+
+.footer-center {
+  grid-column: 2;
+  justify-self: start;
+}
+
+.footer-right {
+  grid-column: 3;
+  justify-self: end;
+}
+
+
+
+  
+}
+
+
+
+
