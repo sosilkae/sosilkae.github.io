@@ -86,6 +86,8 @@ footer span {
     width: 100%;
   }
 
+  
+
 
   footer {
   position: fixed;
@@ -121,7 +123,23 @@ footer span {
   justify-self: end;
 }
 
+@media (max-width: 800px) {
+  footer {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px 24px 24px;
+    font-size: 16px;
+  }
 
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    grid-column: auto;
+    justify-self: auto;
+  }
+}
 
   
 }
