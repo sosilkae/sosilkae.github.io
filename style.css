@@ -33,8 +33,12 @@ body {
   letter-spacing: -0.02em;
 }
 
+.image-section {
+  width: 100%;
+}
+
 .image-section img {
-  width: 600px;
+  width: 100%;
   max-width: 100%;
   height: auto;
   display: block;
@@ -76,6 +80,10 @@ footer span {
   .intro p {
     font-size: 24px;
     line-height: 1.35;
+  }
+
+  .image-section img {
+    width: 100%;
   }
 
   footer {
