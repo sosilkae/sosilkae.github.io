@@ -20,17 +20,18 @@ body {
 
 .page {
   display: grid;
-  grid-template-columns: 470px 1fr;
-  gap: 52px;
+  grid-template-columns: 480px 1fr;
+  gap: 30px;
   align-items: start;
-  padding: 180px 30px 120px;
+  padding: 170px 30px 120px;
 }
 
 .intro p {
   margin: 0;
+  max-width: 500px;
   font-size: 25px;
-  line-height: 1.6;
-  letter-spacing: -0.02em;
+  line-height: 1.55;
+  letter-spacing: -0.03em;
 }
 
 .image-section {
@@ -38,8 +39,7 @@ body {
 }
 
 .image-section img {
-  width: 100%;
-  max-width: 100%;
+  width: min(870px, 100%);
   height: auto;
   display: block;
 }
